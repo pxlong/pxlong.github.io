@@ -306,10 +306,23 @@ html {
              </tr>
              
 
-             <tr>
+             <tr onmouseout="scene_stop()" onmouseover="scene_start()">
                  <td width="25%">
-                     <img src="./pxlong_files/scene.png" alt="scene" width="150" style="border-style: none">
-                 </td><td width="75%" valign="top">
+                     <div class="one">
+                         <div class="two" id="scene_image" style="opacity: 0;"><img src="./pxlong_files/scene2.png"></div>
+                         <img src="./pxlong_files/scene1.png">
+                     </div>
+                     <script type="text/javascript">
+                      function scene_start() {
+                          document.getElementById('scene_image').style.opacity = "1";
+                      }
+                      function scene_stop() {
+                          document.getElementById('scene_image').style.opacity = "0";
+                      }
+                      scene_stop()
+                     </script>
+                 </td>
+                 <td width="75%" valign="top">
                      <p><a href="http://kevinkaixu.net/papers/shi_cag15_scene.pdf" target="_blank" id="scene">
                          <papertitle>Data-Driven Contextual Modeling for 3D Scene Understanding</papertitle></a><br>
               <a href="http://www.yifeishi.net/" target="_blank">Yifei Shi</a>, <strong>Pinxin Long</strong>,
@@ -326,10 +339,23 @@ html {
                  </td>
              </tr>
              
-             <tr>
+             <tr onmouseout="plant_stop()" onmouseover="plant_start()">
                  <td width="25%">
-                     <img src="./pxlong_files/plant.png" alt="plant" width="150" style="border-style: none">
-                 </td><td width="75%" valign="top">
+                     <div class="one">
+                         <div class="two" id="plant_image" style="opacity: 0;"><img src="./pxlong_files/plant2.png"></div>
+                    <img src="./pxlong_files/plant1.png">
+                     </div>
+                     <script type="text/javascript">
+                      function plant_start() {
+                     document.getElementById('plant_image').style.opacity = "1";
+                      }
+                      function plant_stop() {
+                          document.getElementById('plant_image').style.opacity = "0";
+                      }
+                      plant_stop()
+                     </script>
+                 </td>
+                 <td width="75%" valign="top">
                      <p><a href="http://kangxue.org/papers/plantCut.pdf" id="plant" target="_blank">
                          <papertitle>Full 3D Plant Reconstruction via Intrusive Acquisition</papertitle></a><br>
                          <a href="http://kangxue.org" target="_blank">Kangxue Yin</a>, <a href="http://vcc.szu.edu.cn/~huihuang/" target="_blank">Hui Huang</a>, 
@@ -362,7 +388,7 @@ html {
                           document.getElementById('pr2scene_image').style.opacity = "0";
                       }
                       pr2scene_stop()
-                </script>
+                     </script>
                  </td>
                  <td valign="top" width="75%">
                      <p><a href="http://kevinkaixu.net/papers/xu_siga15_pr2scene.pdf" target="_blank">
@@ -452,7 +478,7 @@ html {
                          locomotion control methods. <br>
                      </p>
                      <div style='text-align: center; margin: 0 auto'>
-                         <iframe width="400" height="225" src="https://www.youtube.com/embed/9zPuFaZ4egA" frameborder="0" allowfullscreen></iframe>
+                         <iframe width="440" height="247.5" src="https://www.youtube.com/embed/9zPuFaZ4egA" frameborder="0" allowfullscreen></iframe>
                      </div>
                  </td>
 
@@ -474,7 +500,7 @@ html {
                          based upon user interaction by speech. <br>
                      </p>
                      <div style='text-align: center; margin: 0 auto'>
-                         <iframe width="400" height="225" src="https://www.youtube.com/embed/-rig5GvlBhI" frameborder="0" allowfullscreen></iframe>
+                         <iframe width="440" height="247.5" src="https://www.youtube.com/embed/-rig5GvlBhI" frameborder="0" allowfullscreen></iframe>
                      </div>
                  </td>
              </tr>
