@@ -195,16 +195,56 @@ html {
 
      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
          <tbody>
-
-             <tr onmouseout="drl_stop()" onmouseover="drl_start()">
-                 <td width="25%">
+             <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()">
+                 <td width="25%" valign="bottom" >
                      <heading>Publications</heading><br><br>
                      <div class="one">
-                         <div class="two" id="drl_image" style="opacity: 0;"><img src="./pxlong_files/drlmrca.gif" width="150" height="143"></div>
-                         <img src="./pxlong_files/drlmrca.png" width="150" height="143">
+                         <div class="two" id="hybrid_image" style="opacity: 0;"><img src="./pxlong_files/hybrid.gif"></div>
+                         <img src="./pxlong_files/hybrid.png">
                      </div>
                      <script async="" src="./pxlong_files/analytics.js">
                      </script>
+                     <script type="text/javascript">
+                      function hybrid_start() {
+                          document.getElementById('hybrid_image').style.opacity = "1";
+                      }
+                      function hybrid_stop() {
+                          document.getElementById('hybrid_image').style.opacity = "0";
+                      }
+                      hybrid_stop()
+                     </script>
+                 </td>
+                 <td valign="top" width="75%">
+                     <heading2><i></i></heading2><br>
+                     <p>
+                         <a href="https://arxiv.org/pdf/1808.03841.pdf" target="_blank">
+                             <papertitle>Fully Distributed Multi-Robot Collision Avoidance via Deep Reinforcement Learning for
+                                 Safe and Efficient Navigation in Complex Scenarios</papertitle></a><br>
+                         Tingxiang Fan*,
+                         <strong>Pinxin Long*</strong>,
+                         Wenxi Liu,
+                         <a href="https://sites.google.com/site/panjia/" target="_blank">Jia Pan</a> <br>
+                         <em>Under review</em>, 2018. <br>
+                         <a href="https://sites.google.com/view/hybridmrca/" target="_blank">project</a>
+                         /
+                         <a href="https://www.youtube.com/watch?v=HxTTcap1Wrk" target="_blank">video</a>
+                         /
+                         <a href="https://arxiv.org/abs/1808.03841/" target="_blank">arXiv</a>
+                     </p><p></p>
+                     <p>
+                         We present a decentralized sensor-level collision avoidance policy for multi-robot systems.
+                         The learned policy is also integrated into a hybrid control framework to further improve the policy's robustness and effectiveness.
+                         Our learned policy enables a robot to make effective progress in a crowd without getting stuck. 
+                     </p>
+                 </td>
+             </tr>
+
+             <tr onmouseout="drl_stop()" onmouseover="drl_start()">
+                 <td width="25%" valign="bottom" >
+                     <div class="one">
+                         <div class="two" id="drl_image" style="opacity: 0;"><img src="./pxlong_files/drlmrca.gif"></div>
+                         <img src="./pxlong_files/drlmrca.png">
+                     </div>
                      <script type="text/javascript">
                       function drl_start() {
                           document.getElementById('drl_image').style.opacity = "1";
@@ -216,7 +256,6 @@ html {
                      </script>
                  </td>
                  <td valign="top" width="75%">
-                     <heading2><i></i></heading2><br>
                      <p>
                          <a href="https://arxiv.org/pdf/1709.10082.pdf" target="_blank">
                              <papertitle>Towards Optimally Decentralized Multi-Robot Collision Avoidance via Deep Reinforcement Learning</papertitle></a><br>
