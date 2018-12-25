@@ -147,7 +147,7 @@ html {
                               </p>
                               -->
                               <p align="center">
-                                  <a href="./pxlong_files/pxlong_cv.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
+                                 <!-- <a href="./pxlong_files/pxlong_cv.pdf" target="_blank">CV</a> &nbsp;/&nbsp; -->
                                   <a href="https://scholar.google.com/citations?user=m3tbW2kAAAAJ&hl=en" target="_blank">Google Scholar</a> 
                                   <!-- <a href="http://www.github.com/pxlong/" target="_blank"> GitHub </a> -->
                               </p>
@@ -195,15 +195,59 @@ html {
 
      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
          <tbody>
-             <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()">
+            <tr onmouseout="rlslam_stop()" onmouseover="rlslam_start()">
                  <td width="25%" valign="bottom" >
                      <heading>Publications</heading><br><br>
+                     <div class="one">
+                         <div class="two" id="rlslam_image" style="opacity: 0;"><img src="./pxlong_files/rlslam.gif"></div>
+                         <img src="./pxlong_files/rlslam.png">
+                     </div>
+                     <script async="" src="./pxlong_files/analytics.js">
+                     </script>
+                     <script type="text/javascript">
+                      function rlslam_start() {
+                          document.getElementById('rlslam_image').style.opacity = "1";
+                      }
+                      function rlslam_stop() {
+                          document.getElementById('rlslam_image').style.opacity = "0";
+                      }
+                      rlslam_stop()
+                     </script>
+                 </td>
+                 <td valign="top" width="75%">
+                     <heading2><i></i></heading2><br>
+                     <p>
+                         <a href="https://arxiv.org/pdf/1810.00352.pdf" target="_blank">
+                             <papertitle>Getting Robots Unfrozen and Unlost in Dense Pedestrian Crowds</papertitle></a><br>
+                         Tingxiang Fan*, 
+                         Xinjing Chen*, 
+                         <a href="https://sites.google.com/site/panjia/" target="_blank">Jia Pan</a>, 
+                         <strong>Pinxin Long</strong>,
+                         Wenxi Liu,
+                         <a href="https://scholar.google.com/citations?user=yveq40QAAAAJ&hl=zh-CN" target="_blank">Ruigang Yang</a>,
+                         <a href="http://www.cs.unc.edu/~dm/" target="_blank">Dinesh Manocha</a> <br>
+                         <em>Under review</em>, 2018. <br>
+                         <a href="https://sites.google.com/view/rlslam/" target="_blank">project</a>
+                         /
+                         <a href="https://www.youtube.com/watch?v=mx9eYeMGhVs" target="_blank">video</a>
+                         /
+                         <a href="https://arxiv.org/abs/1810.00352/" target="_blank">arXiv</a>
+                     </p><p></p>
+                     <p>
+                            We aim to enable a mobile robot to navigate through environments with dense crowds, 
+                            e.g., shopping malls, canteens, train stations, or airport terminals. 
+                            Here we propose a navigation framework that handles the robot freezing and the navigation lost
+                            problems simultaneously.
+                     </p>
+                 </td>
+             </tr>
+
+             <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()">
+                 <td width="25%" valign="bottom" >
                      <div class="one">
                          <div class="two" id="hybrid_image" style="opacity: 0;"><img src="./pxlong_files/hybrid.gif"></div>
                          <img src="./pxlong_files/hybrid.png">
                      </div>
-                     <script async="" src="./pxlong_files/analytics.js">
-                     </script>
                      <script type="text/javascript">
                       function hybrid_start() {
                           document.getElementById('hybrid_image').style.opacity = "1";
@@ -215,7 +259,6 @@ html {
                      </script>
                  </td>
                  <td valign="top" width="75%">
-                     <heading2><i></i></heading2><br>
                      <p>
                          <a href="https://arxiv.org/pdf/1808.03841.pdf" target="_blank">
                              <papertitle>Fully Distributed Multi-Robot Collision Avoidance via Deep Reinforcement Learning for
