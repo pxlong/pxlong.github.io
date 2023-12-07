@@ -120,23 +120,28 @@ html {
                                   pinxinlong at gmail dot com
                               </p>
                               <p>
-                                  I am working on localization, decision making and motion planning for robotics and autonomous driving.
-                                  Before digging into self-driving cars, I was a research scientist at
-                                  <a href="http://www.dorabot.com/" target="_blank">Dorabot Inc.</a>, where I worked on multi-robot systems.
-                                  Before that, I spent half a year at the<a href="http://www.cityu.edu.hk" target="_blank"> City University of Hong Kong (CityU)</a> , 
-                                  supervised by <a href="https://sites.google.com/site/panjia/" target="_blank">Prof. Jia Pan</a> on multi-agent collision avoidance.
-                                  And ever since then, I've been collaborating with <a href="https://sites.google.com/site/panjia/" target="_blank">Prof. Jia Pan</a> on machine learning
-                                  for robotic perception, planning and control.
+                                  I am a Staff Software Engineer at Baidu Apollo working on the Apollo Navigation Pilot (i.e. Baidu's Full Self-Driving (FSD), an advanced driver-assist system) 
+                                  which has been successfully deployed on <a href="https://www.jiyue-auto.com/" target="_blank">Jiyue-01 cars</a> and delivered to customers by the end of 2023.
+                                  Before delving into self-driving cars, I was a Researcher and Software Engineer under the mentorship of Prof.<a href="https://scholar.google.com/citations?user=yveq40QAAAAJ&hl=zh-CN" target="_blank"> Ruigang Yang</a>
+                                  at Robotics and Auto-driving Lab (RAL), Baidu Research, focusing on the 
+                                  design and development of the <a href="https://www.youtube.com/watch?v=KFcNf_k0E_M&t=4s&ab_channel=BaiduInc." targe="_blank"> Autonomous Excavator Systems</a>.
+                                  Prior to this role, I held the position of Research Scientist at <a href="https://www.youtube.com/watch?v=HxTTcap1Wrk&ab_channel=TingxiangFan" target="_blank">Dorabot Inc.</a> and served as a Research Assistant 
+                                  collaborating with <a href="https://sites.google.com/site/panjia/" target="_blank">Prof. Jia Pan</a> on projects related to multi-robot collision avoidance.
+                                  
+                                  
+                                  
                               </p>
+                              <!--
                               <p>
                                   Prior to CityU, I worked as a research assistant in <a href="http://vcc.szu.edu.cn/" target="_blank">Visual Computing Center (VCC)</a> at
                                   <a href="http://www.siat.ac.cn/" target="_blank">
                                   Shenzhen Institutes of Advanced Technology (SIAT)</a>, <a href="http://www.cas.cn/" target="_blank">Chinese Academy of Sciences (CAS)</a>, where I involved in
                                   several research projects, including two exciting robotic auto-scanning projects with the <a href="https://www.youtube.com/watch?v=NxOzdXR_aN0&t=4s" target="_blank">
                                       PR2 robot</a>.
-                                  <!-- Before coming to Shenzhen, I received a Bachelor's degree in Automation at
-                                  <a href="http://www.uestc.edu.cn/" target="_blank">UESTC</a>, you can find some videos about my undergraduate projects below.  -->
+                                  Before coming to Shenzhen, I received a Bachelor's degree in Automation at
+                                  <a href="http://www.uestc.edu.cn/" target="_blank">UESTC</a>, you can find some videos about my undergraduate projects below. 
                               </p>
+                              -->
                               <!--
                               <p>
                                   <strong>
@@ -166,13 +171,14 @@ html {
           <tbody>
               <tr>
                   <td>
-                      <heading>News</heading>
+                      <h2>News</h2>
                       <ul>
-                          <li> 2018.01.16 - One paper accepted at ICRA 2018. 
-                          <li> 2017.06.02 - I presented our work on exploring deep neural networks for multi-robot navigation in the
+                          <li> 2021.06 - The Autonomous Excavator paper is published in <strong style="color:red">Science Robotics</strong>. 
+                          <li> 2020.06 - Our paper on multi-robot collision avoidance is published in <strong style="color:red">International Journal of Robotics Research (IJRR)</strong>. 
+                          <li> 2017.06 - I presented our work on exploring deep neural networks for multi-robot navigation in the
                               <a href="http://webdiis.unizar.es/~edumonti/17_ICRA_WS/cfp.html" target="_blank">
                               Multi-robot Perception-Driven Control and Planning Workshop</a> at ICRA 2017.</li>
-                          <li> 2016.12.09 - I presented our work on multi-agent collision avoidance in the
+                          <li> 2016.12 - I presented our work on multi-agent collision avoidance in the
                               <a href="https://sites.google.com/site/malicnips2016/" target="_blank">
                               Learning, Inference and Control of Multi-Agent Systems Workshop</a> at NIPS 2016.</li>
                       </ul>
@@ -180,24 +186,179 @@ html {
               </tr>
 
 
-        <tr>
-            <td width="100%" valign="middle">
-                <heading>Interests</heading>
-                <p>
-                    My current interests lie in the intersection of autonomous driving, robotics, reinforcement learning and deep learning.
-                    In particular, I'm interested in designing machine learning algorithms to learn a driving policy that can enable robotic cars
-                    driving safely, reliably and efficiently in complex environments.
-                </p>
-            </td>
-        </tr>
+        
         </tbody>
       </table>
 
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <h2>Research</h2>
+          <p>
+            I am interested in artificial intelligence, machine learning and robotics.
+            Representative papers are <span class="highlight">highlighted</span> (* denotes equal contribution).
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
          <tbody>
+
+            <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()" bgcolor="#ffffd0">
+                <td width="25%" valign="bottom" >
+                    <div class="one">
+                        <div class="two" id="hybrid_image" style="opacity: 0;"><img src="./pxlong_files/aes_move2dump.gif" width="150"></div>
+                        <img src="./pxlong_files/aes_dig.gif" width="150">
+                    </div>
+                    <script type="text/javascript">
+                     function hybrid_start() {
+                         document.getElementById('hybrid_image').style.opacity = "1";
+                     }
+                     function hybrid_stop() {
+                         document.getElementById('hybrid_image').style.opacity = "0";
+                     }
+                     hybrid_stop()
+                    </script>
+                </td>
+                <td valign="top" width="75%">
+                    <p>
+                        <a href="https://www.science.org/doi/abs/10.1126/scirobotics.abc3164" target="_blank">
+                            <papertitle>An autonomous excavator system for material loading tasks</papertitle></a><br>
+                        <a href="https://www.cs.unc.edu/~zlj/" target="_blank">Liangjun Zhang</a>,
+                            Jinxin Zhao, 
+                        <strong>Pinxin Long</strong>,
+                            Liyang Wang, Lingfeng Qian, Feixiang Lu, 
+                        <a href="https://scholar.google.com/citations?user=2gudyEQAAAAJ&hl=zh-CN" target="_blank">Xibin Song</a>,
+
+                            <a href="https://www.cs.umd.edu/people/dmanocha" target="_blank">Dinesh Manocha</a> <br>
+                        <em><strong>Science Robotics</strong> </em>, 2021. <br>
+                        <a href="https://www.youtube.com/watch?v=7GGn0bkwjWg&ab_channel=GAMMAUMD" target="_blank">video</a>
+                    </p><p></p>
+                    <p>
+                        We present an autonomous excavator system (AES) for material loading tasks. 
+                        Our system can handle different environments and uses an architecture that combines perception and planning.
+                        AES has been deployed for real-world operations for long periods and can operate robustly in challenging scenarios.
+                    </p>
+                </td>
+            </tr>
+
+            <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()">
+                <td width="25%" valign="bottom" >
+                    <div class="one">
+                        <div class="two" id="hybrid_image" style="opacity: 0;"><img src="./pxlong_files/ur5_dig.png" width="150"></div>
+                        <img src="./pxlong_files/ur5_dig.png" width="150">
+                    </div>
+                    <script type="text/javascript">
+                     function hybrid_start() {
+                         document.getElementById('hybrid_image').style.opacity = "1";
+                     }
+                     function hybrid_stop() {
+                         document.getElementById('hybrid_image').style.opacity = "0";
+                     }
+                     hybrid_stop()
+                    </script>
+                </td>
+                <td valign="top" width="75%">
+                    <p>
+                        <a href="https://arxiv.org/pdf/2010.14038.pdf" target="_blank">
+                        <papertitle>Optimization-based framework for excavation trajectory generation</papertitle></a><br>
+                        Yajue Yang, 
+                        <strong>Pinxin Long</strong>,
+                        <a href="https://scholar.google.com/citations?user=2gudyEQAAAAJ&hl=zh-CN" target="_blank">Xibin Song</a>,
+                        <a href="https://sites.google.com/site/panjia/" target="_blank">Jia Pan</a>,
+                        <a href="https://www.cs.unc.edu/~zlj/" target="_blank">Liangjun Zhang</a> <br>
+                        <em>IEEE Robotics and Automation Letters (RAL)</em>, 2021 <br>
+                        <a href="https://arxiv.org/abs/2010.14038" target="_blank">arXiv</a>
+                    </p><p></p>
+                    <p>
+                        We present a novel optimization-based framework for autonomous excavator trajectory generation under various objectives, 
+                        including minimum joint displacement and minimum time. 
+                    </p>
+                </td>
+            </tr>
+
+            <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()" bgcolor="#ffffd0">
+                <td width="25%" valign="bottom" >
+                    <div class="one">
+                        <div class="two" id="hybrid_image" style="opacity: 0;"><img src="./pxlong_files/hybrid.gif"></div>
+                        <img src="./pxlong_files/hybrid.png">
+                    </div>
+                    <script type="text/javascript">
+                     function hybrid_start() {
+                         document.getElementById('hybrid_image').style.opacity = "1";
+                     }
+                     function hybrid_stop() {
+                         document.getElementById('hybrid_image').style.opacity = "0";
+                     }
+                     hybrid_stop()
+                    </script>
+                </td>
+                <td valign="top" width="75%">
+                    <p>
+                        <a href="https://arxiv.org/pdf/1808.03841.pdf" target="_blank">
+                            <papertitle>Distributed multi-robot collision avoidance via deep reinforcement learning for navigation in complex scenarios</papertitle></a><br>
+                        Tingxiang Fan*,
+                        <strong>Pinxin Long*</strong>,
+                        Wenxi Liu,
+                        <a href="https://sites.google.com/site/panjia/" target="_blank">Jia Pan</a> <br>
+                        <em><strong>The International Journal of Robotics Research (IJRR)</strong> </em>, 2020. <br>
+                        <a href="https://sites.google.com/view/hybridmrca/" target="_blank">project</a>
+                        /
+                        <a href="https://www.youtube.com/watch?v=HxTTcap1Wrk" target="_blank">video</a>
+                        /
+                        <a href="https://arxiv.org/abs/1808.03841/" target="_blank">arXiv</a>
+                    </p><p></p>
+                    <p>
+                        We present a decentralized sensor-level collision avoidance policy for multi-robot systems.
+                        The learned policy is also integrated into a hybrid control framework to further improve the policy's robustness and effectiveness.
+                        Our learned policy enables a robot to make effective progress in a crowd without getting stuck. 
+                    </p>
+                </td>
+            </tr>
+
+            <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()">
+                <td width="25%" valign="bottom" >
+                    <div class="one">
+                        <div class="two" id="hybrid_image" style="opacity: 0;"><img src="./pxlong_files/resilient1.png" width="150"></div>
+                        <img src="./pxlong_files/resilient1.png" width="150">
+                    </div>
+                    <script type="text/javascript">
+                     function hybrid_start() {
+                         document.getElementById('hybrid_image').style.opacity = "1";
+                     }
+                     function hybrid_stop() {
+                         document.getElementById('hybrid_image').style.opacity = "0";
+                     }
+                     hybrid_stop()
+                    </script>
+                </td>
+                <td valign="top" width="75%">
+                    <p>
+                        <a href="https://arxiv.org/pdf/1910.09998.pdf" target="_blank">
+                            <papertitle>Learning resilient behaviors for navigation under uncertainty</papertitle></a><br>
+                            Tingxiang Fan, 
+                            <strong>Pinxin Long</strong>,
+                            <a href="https://scholar.google.com/citations?user=Y310sT0AAAAJ&hl=en" target="_blank">Wenxi Liu</a>,
+                            <a href="https://sites.google.com/site/panjia/" target="_blank">Jia Pan</a>,
+                            <a href="https://scholar.google.com/citations?user=yveq40QAAAAJ&hl=en" target="_blank">Ruigang Yang</a>,
+                            <a href="https://www.cs.umd.edu/people/dmanocha" target="_blank">Dinesh Manocha</a> <br>
+                            
+                        <em>International Conference on Robotics and Automation (ICRA) </em>, 2020. <br>
+                        <a href="https://www.youtube.com/watch?v=KxRJp_Aanpo&ab_channel=TingxiangFan" target="_blank">video</a>
+                        /
+                        <a href="https://arxiv.org/abs/1910.09998/" target="_blank">arXiv</a>
+                    </p><p></p>
+                    <p>
+                        We present a novel approach for uncertainty-aware navigation by introducing an uncertaintyaware predictor to model the environmental uncertainty, and 
+                        propose a novel uncertainty-aware navigation network to learn resilient behaviors in the prior unknown environments
+                    </p>
+                </td>
+            </tr>
+
             <tr onmouseout="rlslam_stop()" onmouseover="rlslam_start()">
                  <td width="25%" valign="bottom" >
-                     <heading>Publications</heading>
+                     <!-- h2>Publications</h2-->
                      <br><br>
                      <div class="one">
                          <div class="two" id="rlslam_image" style="opacity: 0;"><img src="./pxlong_files/rlslam.gif"></div>
@@ -215,6 +376,7 @@ html {
                       rlslam_stop()
                      </script>
                  </td>
+
                  <td valign="top" width="75%">
                      <heading2><i></i></heading2><br>
                      <p>
@@ -226,7 +388,7 @@ html {
                          <strong>Pinxin Long</strong>,
                          Wenxi Liu,
                          <a href="https://scholar.google.com/citations?user=yveq40QAAAAJ&hl=zh-CN" target="_blank">Ruigang Yang</a>,
-                         <a href="http://www.cs.unc.edu/~dm/" target="_blank">Dinesh Manocha</a> <br>
+                         <a href="https://www.cs.umd.edu/people/dmanocha" target="_blank">Dinesh Manocha</a> <br>
                          <em>IEEE Robotics and Automation Letters (RAL)</em>, 2019. <br>
                          <a href="https://sites.google.com/view/rlslam/" target="_blank">project</a>
                          /
@@ -243,47 +405,8 @@ html {
                  </td>
              </tr>
 
-             <tr onmouseout="hybrid_stop()" onmouseover="hybrid_start()">
-                 <td width="25%" valign="bottom" >
-                     <div class="one">
-                         <div class="two" id="hybrid_image" style="opacity: 0;"><img src="./pxlong_files/hybrid.gif"></div>
-                         <img src="./pxlong_files/hybrid.png">
-                     </div>
-                     <script type="text/javascript">
-                      function hybrid_start() {
-                          document.getElementById('hybrid_image').style.opacity = "1";
-                      }
-                      function hybrid_stop() {
-                          document.getElementById('hybrid_image').style.opacity = "0";
-                      }
-                      hybrid_stop()
-                     </script>
-                 </td>
-                 <td valign="top" width="75%">
-                     <p>
-                         <a href="https://arxiv.org/pdf/1808.03841.pdf" target="_blank">
-                             <papertitle>Fully Distributed Multi-Robot Collision Avoidance via Deep Reinforcement Learning for
-                                 Safe and Efficient Navigation in Complex Scenarios</papertitle></a><br>
-                         Tingxiang Fan*,
-                         <strong>Pinxin Long*</strong>,
-                         Wenxi Liu,
-                         <a href="https://sites.google.com/site/panjia/" target="_blank">Jia Pan</a> <br>
-                         <em>Submitted to The International Journal of Robotics Research (IJRR)</em>, 2019. <br>
-                         <a href="https://sites.google.com/view/hybridmrca/" target="_blank">project</a>
-                         /
-                         <a href="https://www.youtube.com/watch?v=HxTTcap1Wrk" target="_blank">video</a>
-                         /
-                         <a href="https://arxiv.org/abs/1808.03841/" target="_blank">arXiv</a>
-                     </p><p></p>
-                     <p>
-                         We present a decentralized sensor-level collision avoidance policy for multi-robot systems.
-                         The learned policy is also integrated into a hybrid control framework to further improve the policy's robustness and effectiveness.
-                         Our learned policy enables a robot to make effective progress in a crowd without getting stuck. 
-                     </p>
-                 </td>
-             </tr>
-
-             <tr onmouseout="drl_stop()" onmouseover="drl_start()">
+             
+             <tr onmouseout="drl_stop()" onmouseover="drl_start()" bgcolor="#ffffd0">
                  <td width="25%" valign="bottom" >
                      <div class="one">
                          <div class="two" id="drl_image" style="opacity: 0;"><img src="./pxlong_files/drlmrca.gif"></div>
@@ -328,7 +451,7 @@ html {
              </tr>
 
 
-             <tr onmouseout="deepmaca_stop()" onmouseover="deepmaca_start()">
+             <tr onmouseout="deepmaca_stop()" onmouseover="deepmaca_start()" bgcolor="#ffffd0">
                  <td width="25%">
                      <heading2><i></i></heading2><br>
                      <div class="one">
@@ -390,7 +513,7 @@ html {
                          <a href="http://www.dorabot.com/" target="_blank">Hao Zhang</a>,
                          <strong>Pinxin Long</strong>, Dandan Zhou, Zhongfeng Qian, Zheng Wang,
                          <a href="https://sites.google.com/site/weiweilab/" target="_blank">Weiwei Wan</a>,
-                         <a href="http://www.cs.unc.edu/~dm/" target="_blank">Dinesh Manocha</a>, Chonhyon Park, Tommy Hu, Chao Cao, Yibo Chen, Marco Chow,
+                         <a href="https://www.cs.umd.edu/people/dmanocha" target="_blank">Dinesh Manocha</a>, Chonhyon Park, Tommy Hu, Chao Cao, Yibo Chen, Marco Chow,
                          <a href="https://sites.google.com/site/panjia/" target="_blank">Jia Pan</a> <br>
                          <em>International Conference on Automation Science and Engineering (CASE)</em>, 2016 <br>
                          <!--  <strong style="color:green">Best Cognitive Robotics Paper Finalist</strong><br>-->
